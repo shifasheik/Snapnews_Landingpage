@@ -8,12 +8,10 @@ const Blog = () => {
     "The country faces challenges such as slow structural reforms, trade barriers, and high youth unemployment.",
   ];
 
-  // State to track shares, saves, and forwards
   const [shares, setShares] = useState(0);
   const [saves, setSaves] = useState(0);
   const [forwards, setForwards] = useState(0);
 
-  // Handlers for updating counts
   const handleShare = () => setShares(shares + 1);
   const handleSave = () => setSaves(saves + 1);
   const handleForward = () => setForwards(forwards + 1);

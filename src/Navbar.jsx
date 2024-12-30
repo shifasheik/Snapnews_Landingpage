@@ -19,15 +19,17 @@ const Navbar = () => {
       <div className="flex items-center space-x-4">
         <NavLink
           to="/readnow"
-          className="text-lg font-medium text-gray-800 hover:text-red-500 transition duration-200 cursor-pointer"
-          activeClassName="text-red-500"
+          className={({ isActive }) =>
+            `text-lg font-medium transition duration-200 cursor-pointer ${isActive ? 'text-red-500 border-b-2 border-red-500' : 'text-gray-800'}`
+          }
         >
           Read Now
         </NavLink>
         <NavLink
           to="/blog"
-          className="text-lg font-medium text-gray-800 hover:text-red-500 transition duration-200 cursor-pointer"
-          activeClassName="text-red-500"
+          className={({ isActive }) =>
+            `text-lg font-medium transition duration-200 cursor-pointer ${isActive ? 'text-red-500 border-b-2 border-red-500' : 'text-gray-800'}`
+          }
         >
           Blog
         </NavLink>

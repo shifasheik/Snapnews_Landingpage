@@ -2,7 +2,7 @@ import React from "react";
 
 const Readnow = () => {
   return (
-    <div className="bg-gray-100 py-[10%] px-[15%]">
+    <div className="bg-gray-100 py-[5%] px-[15%]">
       {/* Top Banner */}
       <div className="bg-red-500 text-white text-center py-2 flex justify-between items-center rounded-lg px-[3%]">
         <div className="text-left text-lg">

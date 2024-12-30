@@ -13,12 +13,14 @@ function App() {
     <BrowserRouter>
       <div>
         <Navbar />
+        <div className="mt-[5%]">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/readnow" element={<Readnow />} />
 
         </Routes>
+        </div>
         <Footer />
       </div>
     </BrowserRouter>
