@@ -1,32 +1,36 @@
 import React from "react";
-import { Link } from "react-router-dom"; 
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="bg-white py-4 px-[5%] shadow-md flex justify-between items-center ">
+    <div className="bg-white py-4 px-[5%] shadow-md flex justify-between items-center fixed top-0 w-full z-50">
       {/* Left side: Image */}
       <div className="flex items-center">
-        <img
-          src="https://via.placeholder.com/150"
-          alt="Logo"
-          className="h-12 w-12 object-cover"
-        />
+        <NavLink to="/">
+          <img
+            src="https://via.placeholder.com/150"
+            alt="Logo"
+            className="h-12 w-12 object-cover"
+          />
+        </NavLink>
       </div>
 
       {/* Right side: Blog link and button */}
       <div className="flex items-center space-x-4">
-        <Link
-          to="/readnow" 
-          className="text-lg font-medium text-gray-800 hover:text-primaryColor transition duration-200 cursor-pointer"
+        <NavLink
+          to="/readnow"
+          className="text-lg font-medium text-gray-800 hover:text-red-500 transition duration-200 cursor-pointer"
+          activeClassName="text-red-500"
         >
           Read Now
-        </Link>
-        <Link
-          to="/blog" 
-          className="text-lg font-medium text-gray-800 hover:text-primaryColor transition duration-200 cursor-pointer"
+        </NavLink>
+        <NavLink
+          to="/blog"
+          className="text-lg font-medium text-gray-800 hover:text-red-500 transition duration-200 cursor-pointer"
+          activeClassName="text-red-500"
         >
           Blog
-        </Link>
+        </NavLink>
       </div>
     </div>
   );

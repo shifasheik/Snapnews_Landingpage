@@ -27,10 +27,10 @@ const Footer = () => {
             alt="Inshorts Logo"
             className="mb-2"
           />
-          <p className="text-sm">&copy; Inshorts Pte Ltd</p>
+          <p className="text-sm">&copy; Snapnews Pte Ltd</p>
           <p className="text-sm">© COPYRIGHT 2024</p>
         </div>
-       
+
         {/* Right Section */}
         <div className="flex flex-col items-center md:items-end">
           <h3 className="text-lg font-semibold text-white text-left mb-3">

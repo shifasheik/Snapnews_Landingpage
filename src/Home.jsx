@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaHeart, FaApple, FaGlobe, FaAndroid } from "react-icons/fa";
+import { FaRegStar, FaStar, FaApple, FaGlobe, FaAndroid } from "react-icons/fa";
 import { FaTimes } from "react-icons/fa";
 
 const Home = () => {
@@ -218,7 +218,13 @@ const Home = () => {
         <div className="w-full px-10 py-10 bg-gray-100">
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
             <div className="flex-1 flex flex-col items-center text-center px-10">
-              <FaHeart className="text-red-500 text-4xl mb-4" />
+              <div className="flex items-center">
+                <FaStar className="text-yellow-500 text-2xl mb-4" />{" "}
+                <FaStar className="text-yellow-500 text-2xl mb-4" />{" "}
+                <FaStar className="text-yellow-500 text-2xl mb-4" />{" "}
+                <FaStar className="text-yellow-500 text-2xl mb-4" />{" "}
+                <FaRegStar className="text-yellow-500 text-2xl mb-4" />{" "}
+              </div>
               <h3 className="text-xl font-bold text-red-500 mb-2">
                 Loved by users
               </h3>
@@ -266,7 +272,7 @@ const Home = () => {
             <img
               src="/download-google.png"
               alt="App Store"
-              className="w-36 h-24 object-contain" 
+              className="w-36 h-24 object-contain"
             />
           </a>
           <a
@@ -277,7 +283,7 @@ const Home = () => {
             <img
               src="/download-apple.png"
               alt="Google Play"
-              className="w-36 h-24 object-contain" 
+              className="w-36 h-24 object-contain"
             />
           </a>
         </div>
